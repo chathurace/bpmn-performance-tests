@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<definitions targetNamespace="http://www.activiti.org/test" xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL">
+    <process id="xor_s-3v" isExecutable="true" name="xor_s-3v">
+        <startEvent id="startEvent" name="startEvent"/>
+        <endEvent id="endEvent" name="endEvent"/>
+        <exclusiveGateway default="xor1_st1" id="xor1" name="xor1"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1V" id="st1" name="st1"/>
+        <sequenceFlow id="xor1_st1" sourceRef="xor1" targetRef="st1"/>
+        <sequenceFlow id="st1_endEvent" sourceRef="st1" targetRef="endEvent"/>
+        <sequenceFlow id="startEvent_xor1" sourceRef="startEvent" targetRef="xor1"/>
+        <exclusiveGateway default="xor2_st2" id="xor2" name="xor2"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1V" id="st2" name="st2"/>
+        <sequenceFlow id="xor2_st2" sourceRef="xor2" targetRef="st2"/>
+        <sequenceFlow id="st2_endEvent" sourceRef="st2" targetRef="endEvent"/>
+        <sequenceFlow id="xor1_xor2" sourceRef="xor1" targetRef="xor2">
+            <conditionExpression xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" ns0:type="tFormalExpression"><![CDATA[${v1 == "test1"}]]></conditionExpression>
+        </sequenceFlow>
+        <exclusiveGateway default="xor3_st3" id="xor3" name="xor3"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1V" id="st3" name="st3"/>
+        <sequenceFlow id="xor3_st3" sourceRef="xor3" targetRef="st3"/>
+        <sequenceFlow id="st3_endEvent" sourceRef="st3" targetRef="endEvent"/>
+        <sequenceFlow id="xor2_xor3" sourceRef="xor2" targetRef="xor3">
+            <conditionExpression xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" ns0:type="tFormalExpression"><![CDATA[${v1 == "test1"}]]></conditionExpression>
+        </sequenceFlow>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1V" id="st_condition" name="st_condition"/>
+        <sequenceFlow id="xor3_st_condition" sourceRef="xor3" targetRef="st_condition"/>
+        <sequenceFlow id="st_condition_endEvent" sourceRef="st_condition" targetRef="endEvent"/>
+    </process>
+</definitions>

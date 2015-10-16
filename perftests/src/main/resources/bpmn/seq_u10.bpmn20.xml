@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<definitions targetNamespace="http://www.activiti.org/test" xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL">
+    <process id="seq_u10" isExecutable="true" name="seq_u10">
+        <startEvent id="startEvent" name="startEvent"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut1" name="ut1"/>
+        <sequenceFlow id="startEvent_ut1" sourceRef="startEvent" targetRef="ut1"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut2" name="ut2"/>
+        <sequenceFlow id="ut1_ut2" sourceRef="ut1" targetRef="ut2"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut3" name="ut3"/>
+        <sequenceFlow id="ut2_ut3" sourceRef="ut2" targetRef="ut3"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut4" name="ut4"/>
+        <sequenceFlow id="ut3_ut4" sourceRef="ut3" targetRef="ut4"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut5" name="ut5"/>
+        <sequenceFlow id="ut4_ut5" sourceRef="ut4" targetRef="ut5"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut6" name="ut6"/>
+        <sequenceFlow id="ut5_ut6" sourceRef="ut5" targetRef="ut6"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut7" name="ut7"/>
+        <sequenceFlow id="ut6_ut7" sourceRef="ut6" targetRef="ut7"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut8" name="ut8"/>
+        <sequenceFlow id="ut7_ut8" sourceRef="ut7" targetRef="ut8"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut9" name="ut9"/>
+        <sequenceFlow id="ut8_ut9" sourceRef="ut8" targetRef="ut9"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut10" name="ut10"/>
+        <sequenceFlow id="ut9_ut10" sourceRef="ut9" targetRef="ut10"/>
+        <endEvent id="endEvent" name="endEvent"/>
+        <sequenceFlow id="ut10_endEvent" sourceRef="ut10" targetRef="endEvent"/>
+    </process>
+</definitions>

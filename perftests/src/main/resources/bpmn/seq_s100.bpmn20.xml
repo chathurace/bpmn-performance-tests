@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<definitions targetNamespace="http://www.activiti.org/test" xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL">
+    <process id="seq_s100" isExecutable="true" name="seq_s100">
+        <startEvent id="startEvent" name="startEvent"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st1" name="st1"/>
+        <sequenceFlow id="startEvent_st1" sourceRef="startEvent" targetRef="st1"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st2" name="st2"/>
+        <sequenceFlow id="st1_st2" sourceRef="st1" targetRef="st2"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st3" name="st3"/>
+        <sequenceFlow id="st2_st3" sourceRef="st2" targetRef="st3"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st4" name="st4"/>
+        <sequenceFlow id="st3_st4" sourceRef="st3" targetRef="st4"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st5" name="st5"/>
+        <sequenceFlow id="st4_st5" sourceRef="st4" targetRef="st5"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st6" name="st6"/>
+        <sequenceFlow id="st5_st6" sourceRef="st5" targetRef="st6"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st7" name="st7"/>
+        <sequenceFlow id="st6_st7" sourceRef="st6" targetRef="st7"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st8" name="st8"/>
+        <sequenceFlow id="st7_st8" sourceRef="st7" targetRef="st8"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st9" name="st9"/>
+        <sequenceFlow id="st8_st9" sourceRef="st8" targetRef="st9"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st10" name="st10"/>
+        <sequenceFlow id="st9_st10" sourceRef="st9" targetRef="st10"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st11" name="st11"/>
+        <sequenceFlow id="st10_st11" sourceRef="st10" targetRef="st11"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st12" name="st12"/>
+        <sequenceFlow id="st11_st12" sourceRef="st11" targetRef="st12"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st13" name="st13"/>
+        <sequenceFlow id="st12_st13" sourceRef="st12" targetRef="st13"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st14" name="st14"/>
+        <sequenceFlow id="st13_st14" sourceRef="st13" targetRef="st14"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st15" name="st15"/>
+        <sequenceFlow id="st14_st15" sourceRef="st14" targetRef="st15"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st16" name="st16"/>
+        <sequenceFlow id="st15_st16" sourceRef="st15" targetRef="st16"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st17" name="st17"/>
+        <sequenceFlow id="st16_st17" sourceRef="st16" targetRef="st17"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st18" name="st18"/>
+        <sequenceFlow id="st17_st18" sourceRef="st17" targetRef="st18"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st19" name="st19"/>
+        <sequenceFlow id="st18_st19" sourceRef="st18" targetRef="st19"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st20" name="st20"/>
+        <sequenceFlow id="st19_st20" sourceRef="st19" targetRef="st20"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st21" name="st21"/>
+        <sequenceFlow id="st20_st21" sourceRef="st20" targetRef="st21"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st22" name="st22"/>
+        <sequenceFlow id="st21_st22" sourceRef="st21" targetRef="st22"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st23" name="st23"/>
+        <sequenceFlow id="st22_st23" sourceRef="st22" targetRef="st23"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st24" name="st24"/>
+        <sequenceFlow id="st23_st24" sourceRef="st23" targetRef="st24"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st25" name="st25"/>
+        <sequenceFlow id="st24_st25" sourceRef="st24" targetRef="st25"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st26" name="st26"/>
+        <sequenceFlow id="st25_st26" sourceRef="st25" targetRef="st26"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st27" name="st27"/>
+        <sequenceFlow id="st26_st27" sourceRef="st26" targetRef="st27"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st28" name="st28"/>
+        <sequenceFlow id="st27_st28" sourceRef="st27" targetRef="st28"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st29" name="st29"/>
+        <sequenceFlow id="st28_st29" sourceRef="st28" targetRef="st29"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st30" name="st30"/>
+        <sequenceFlow id="st29_st30" sourceRef="st29" targetRef="st30"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st31" name="st31"/>
+        <sequenceFlow id="st30_st31" sourceRef="st30" targetRef="st31"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st32" name="st32"/>
+        <sequenceFlow id="st31_st32" sourceRef="st31" targetRef="st32"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st33" name="st33"/>
+        <sequenceFlow id="st32_st33" sourceRef="st32" targetRef="st33"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st34" name="st34"/>
+        <sequenceFlow id="st33_st34" sourceRef="st33" targetRef="st34"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st35" name="st35"/>
+        <sequenceFlow id="st34_st35" sourceRef="st34" targetRef="st35"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st36" name="st36"/>
+        <sequenceFlow id="st35_st36" sourceRef="st35" targetRef="st36"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st37" name="st37"/>
+        <sequenceFlow id="st36_st37" sourceRef="st36" targetRef="st37"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st38" name="st38"/>
+        <sequenceFlow id="st37_st38" sourceRef="st37" targetRef="st38"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st39" name="st39"/>
+        <sequenceFlow id="st38_st39" sourceRef="st38" targetRef="st39"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st40" name="st40"/>
+        <sequenceFlow id="st39_st40" sourceRef="st39" targetRef="st40"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st41" name="st41"/>
+        <sequenceFlow id="st40_st41" sourceRef="st40" targetRef="st41"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st42" name="st42"/>
+        <sequenceFlow id="st41_st42" sourceRef="st41" targetRef="st42"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st43" name="st43"/>
+        <sequenceFlow id="st42_st43" sourceRef="st42" targetRef="st43"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st44" name="st44"/>
+        <sequenceFlow id="st43_st44" sourceRef="st43" targetRef="st44"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st45" name="st45"/>
+        <sequenceFlow id="st44_st45" sourceRef="st44" targetRef="st45"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st46" name="st46"/>
+        <sequenceFlow id="st45_st46" sourceRef="st45" targetRef="st46"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st47" name="st47"/>
+        <sequenceFlow id="st46_st47" sourceRef="st46" targetRef="st47"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st48" name="st48"/>
+        <sequenceFlow id="st47_st48" sourceRef="st47" targetRef="st48"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st49" name="st49"/>
+        <sequenceFlow id="st48_st49" sourceRef="st48" targetRef="st49"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st50" name="st50"/>
+        <sequenceFlow id="st49_st50" sourceRef="st49" targetRef="st50"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st51" name="st51"/>
+        <sequenceFlow id="st50_st51" sourceRef="st50" targetRef="st51"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st52" name="st52"/>
+        <sequenceFlow id="st51_st52" sourceRef="st51" targetRef="st52"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st53" name="st53"/>
+        <sequenceFlow id="st52_st53" sourceRef="st52" targetRef="st53"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st54" name="st54"/>
+        <sequenceFlow id="st53_st54" sourceRef="st53" targetRef="st54"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st55" name="st55"/>
+        <sequenceFlow id="st54_st55" sourceRef="st54" targetRef="st55"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st56" name="st56"/>
+        <sequenceFlow id="st55_st56" sourceRef="st55" targetRef="st56"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st57" name="st57"/>
+        <sequenceFlow id="st56_st57" sourceRef="st56" targetRef="st57"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st58" name="st58"/>
+        <sequenceFlow id="st57_st58" sourceRef="st57" targetRef="st58"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st59" name="st59"/>
+        <sequenceFlow id="st58_st59" sourceRef="st58" targetRef="st59"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st60" name="st60"/>
+        <sequenceFlow id="st59_st60" sourceRef="st59" targetRef="st60"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st61" name="st61"/>
+        <sequenceFlow id="st60_st61" sourceRef="st60" targetRef="st61"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st62" name="st62"/>
+        <sequenceFlow id="st61_st62" sourceRef="st61" targetRef="st62"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st63" name="st63"/>
+        <sequenceFlow id="st62_st63" sourceRef="st62" targetRef="st63"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st64" name="st64"/>
+        <sequenceFlow id="st63_st64" sourceRef="st63" targetRef="st64"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st65" name="st65"/>
+        <sequenceFlow id="st64_st65" sourceRef="st64" targetRef="st65"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st66" name="st66"/>
+        <sequenceFlow id="st65_st66" sourceRef="st65" targetRef="st66"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st67" name="st67"/>
+        <sequenceFlow id="st66_st67" sourceRef="st66" targetRef="st67"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st68" name="st68"/>
+        <sequenceFlow id="st67_st68" sourceRef="st67" targetRef="st68"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st69" name="st69"/>
+        <sequenceFlow id="st68_st69" sourceRef="st68" targetRef="st69"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st70" name="st70"/>
+        <sequenceFlow id="st69_st70" sourceRef="st69" targetRef="st70"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st71" name="st71"/>
+        <sequenceFlow id="st70_st71" sourceRef="st70" targetRef="st71"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st72" name="st72"/>
+        <sequenceFlow id="st71_st72" sourceRef="st71" targetRef="st72"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st73" name="st73"/>
+        <sequenceFlow id="st72_st73" sourceRef="st72" targetRef="st73"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st74" name="st74"/>
+        <sequenceFlow id="st73_st74" sourceRef="st73" targetRef="st74"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st75" name="st75"/>
+        <sequenceFlow id="st74_st75" sourceRef="st74" targetRef="st75"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st76" name="st76"/>
+        <sequenceFlow id="st75_st76" sourceRef="st75" targetRef="st76"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st77" name="st77"/>
+        <sequenceFlow id="st76_st77" sourceRef="st76" targetRef="st77"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st78" name="st78"/>
+        <sequenceFlow id="st77_st78" sourceRef="st77" targetRef="st78"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st79" name="st79"/>
+        <sequenceFlow id="st78_st79" sourceRef="st78" targetRef="st79"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st80" name="st80"/>
+        <sequenceFlow id="st79_st80" sourceRef="st79" targetRef="st80"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st81" name="st81"/>
+        <sequenceFlow id="st80_st81" sourceRef="st80" targetRef="st81"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st82" name="st82"/>
+        <sequenceFlow id="st81_st82" sourceRef="st81" targetRef="st82"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st83" name="st83"/>
+        <sequenceFlow id="st82_st83" sourceRef="st82" targetRef="st83"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st84" name="st84"/>
+        <sequenceFlow id="st83_st84" sourceRef="st83" targetRef="st84"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st85" name="st85"/>
+        <sequenceFlow id="st84_st85" sourceRef="st84" targetRef="st85"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st86" name="st86"/>
+        <sequenceFlow id="st85_st86" sourceRef="st85" targetRef="st86"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st87" name="st87"/>
+        <sequenceFlow id="st86_st87" sourceRef="st86" targetRef="st87"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st88" name="st88"/>
+        <sequenceFlow id="st87_st88" sourceRef="st87" targetRef="st88"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st89" name="st89"/>
+        <sequenceFlow id="st88_st89" sourceRef="st88" targetRef="st89"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st90" name="st90"/>
+        <sequenceFlow id="st89_st90" sourceRef="st89" targetRef="st90"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st91" name="st91"/>
+        <sequenceFlow id="st90_st91" sourceRef="st90" targetRef="st91"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st92" name="st92"/>
+        <sequenceFlow id="st91_st92" sourceRef="st91" targetRef="st92"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st93" name="st93"/>
+        <sequenceFlow id="st92_st93" sourceRef="st92" targetRef="st93"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st94" name="st94"/>
+        <sequenceFlow id="st93_st94" sourceRef="st93" targetRef="st94"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st95" name="st95"/>
+        <sequenceFlow id="st94_st95" sourceRef="st94" targetRef="st95"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st96" name="st96"/>
+        <sequenceFlow id="st95_st96" sourceRef="st95" targetRef="st96"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st97" name="st97"/>
+        <sequenceFlow id="st96_st97" sourceRef="st96" targetRef="st97"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st98" name="st98"/>
+        <sequenceFlow id="st97_st98" sourceRef="st97" targetRef="st98"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st99" name="st99"/>
+        <sequenceFlow id="st98_st99" sourceRef="st98" targetRef="st99"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bps.perf.services.Service1" id="st100" name="st100"/>
+        <sequenceFlow id="st99_st100" sourceRef="st99" targetRef="st100"/>
+        <endEvent id="endEvent" name="endEvent"/>
+        <sequenceFlow id="st100_endEvent" sourceRef="st100" targetRef="endEvent"/>
+    </process>
+</definitions>

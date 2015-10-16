@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<definitions targetNamespace="http://www.activiti.org/test" xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL">
+    <process id="seq_i10" isExecutable="true" name="seq_i10">
+        <startEvent id="startEvent" name="startEvent"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bpmn.extensions.rest.SyncInvokeTask" id="rt1" name="rt1">
+            <extensionElements>
+                <field name="serviceURL" xmlns="http://activiti.org/bpmn">
+                    <expression>http://10.0.3.1:9764/bps-bperf-services_1.0.0/services/service1/echo</expression>
+                </field>
+                <field name="method" xmlns="http://activiti.org/bpmn">
+                    <string><![CDATA[POST]]></string>
+                </field>
+                <field name="input" xmlns="http://activiti.org/bpmn">
+                    <expression>Message sent from: rt1</expression>
+                </field>
+                <field name="vout" xmlns="http://activiti.org/bpmn">
+                    <string><![CDATA[outvar1]]></string>
+                </field>
+            </extensionElements>
+        </serviceTask>
+        <sequenceFlow id="startEvent_rt1" sourceRef="startEvent" targetRef="rt1"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bpmn.extensions.rest.SyncInvokeTask" id="rt2" name="rt2">
+            <extensionElements>
+                <field name="serviceURL" xmlns="http://activiti.org/bpmn">
+                    <expression>http://10.0.3.1:9764/bps-bperf-services_1.0.0/services/service1/echo</expression>
+                </field>
+                <field name="method" xmlns="http://activiti.org/bpmn">
+                    <string><![CDATA[POST]]></string>
+                </field>
+                <field name="input" xmlns="http://activiti.org/bpmn">
+                    <expression>Message sent from: rt2</expression>
+                </field>
+                <field name="vout" xmlns="http://activiti.org/bpmn">
+                    <string><![CDATA[outvar1]]></string>
+                </field>
+            </extensionElements>
+        </serviceTask>
+        <sequenceFlow id="rt1_rt2" sourceRef="rt1" targetRef="rt2"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bpmn.extensions.rest.SyncInvokeTask" id="rt3" name="rt3">
+            <extensionElements>
+                <field name="serviceURL" xmlns="http://activiti.org/bpmn">
+                    <expression>http://10.0.3.1:9764/bps-bperf-services_1.0.0/services/service1/echo</expression>
+                </field>
+                <field name="method" xmlns="http://activiti.org/bpmn">
+                    <string><![CDATA[POST]]></string>
+                </field>
+                <field name="input" xmlns="http://activiti.org/bpmn">
+                    <expression>Message sent from: rt3</expression>
+                </field>
+                <field name="vout" xmlns="http://activiti.org/bpmn">
+                    <string><![CDATA[outvar1]]></string>
+                </field>
+            </extensionElements>
+        </serviceTask>
+        <sequenceFlow id="rt2_rt3" sourceRef="rt2" targetRef="rt3"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bpmn.extensions.rest.SyncInvokeTask" id="rt4" name="rt4">
+            <extensionElements>
+                <field name="serviceURL" xmlns="http://activiti.org/bpmn">
+                    <expression>http://10.0.3.1:9764/bps-bperf-services_1.0.0/services/service1/echo</expression>
+                </field>
+                <field name="method" xmlns="http://activiti.org/bpmn">
+                    <string><![CDATA[POST]]></string>
+                </field>
+                <field name="input" xmlns="http://activiti.org/bpmn">
+                    <expression>Message sent from: rt4</expression>
+                </field>
+                <field name="vout" xmlns="http://activiti.org/bpmn">
+                    <string><![CDATA[outvar1]]></string>
+                </field>
+            </extensionElements>
+        </serviceTask>
+        <sequenceFlow id="rt3_rt4" sourceRef="rt3" targetRef="rt4"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bpmn.extensions.rest.SyncInvokeTask" id="rt5" name="rt5">
+            <extensionElements>
+                <field name="serviceURL" xmlns="http://activiti.org/bpmn">
+                    <expression>http://10.0.3.1:9764/bps-bperf-services_1.0.0/services/service1/echo</expression>
+                </field>
+                <field name="method" xmlns="http://activiti.org/bpmn">
+                    <string><![CDATA[POST]]></string>
+                </field>
+                <field name="input" xmlns="http://activiti.org/bpmn">
+                    <expression>Message sent from: rt5</expression>
+                </field>
+                <field name="vout" xmlns="http://activiti.org/bpmn">
+                    <string><![CDATA[outvar1]]></string>
+                </field>
+            </extensionElements>
+        </serviceTask>
+        <sequenceFlow id="rt4_rt5" sourceRef="rt4" targetRef="rt5"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bpmn.extensions.rest.SyncInvokeTask" id="rt6" name="rt6">
+            <extensionElements>
+                <field name="serviceURL" xmlns="http://activiti.org/bpmn">
+                    <expression>http://10.0.3.1:9764/bps-bperf-services_1.0.0/services/service1/echo</expression>
+                </field>
+                <field name="method" xmlns="http://activiti.org/bpmn">
+                    <string><![CDATA[POST]]></string>
+                </field>
+                <field name="input" xmlns="http://activiti.org/bpmn">
+                    <expression>Message sent from: rt6</expression>
+                </field>
+                <field name="vout" xmlns="http://activiti.org/bpmn">
+                    <string><![CDATA[outvar1]]></string>
+                </field>
+            </extensionElements>
+        </serviceTask>
+        <sequenceFlow id="rt5_rt6" sourceRef="rt5" targetRef="rt6"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bpmn.extensions.rest.SyncInvokeTask" id="rt7" name="rt7">
+            <extensionElements>
+                <field name="serviceURL" xmlns="http://activiti.org/bpmn">
+                    <expression>http://10.0.3.1:9764/bps-bperf-services_1.0.0/services/service1/echo</expression>
+                </field>
+                <field name="method" xmlns="http://activiti.org/bpmn">
+                    <string><![CDATA[POST]]></string>
+                </field>
+                <field name="input" xmlns="http://activiti.org/bpmn">
+                    <expression>Message sent from: rt7</expression>
+                </field>
+                <field name="vout" xmlns="http://activiti.org/bpmn">
+                    <string><![CDATA[outvar1]]></string>
+                </field>
+            </extensionElements>
+        </serviceTask>
+        <sequenceFlow id="rt6_rt7" sourceRef="rt6" targetRef="rt7"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bpmn.extensions.rest.SyncInvokeTask" id="rt8" name="rt8">
+            <extensionElements>
+                <field name="serviceURL" xmlns="http://activiti.org/bpmn">
+                    <expression>http://10.0.3.1:9764/bps-bperf-services_1.0.0/services/service1/echo</expression>
+                </field>
+                <field name="method" xmlns="http://activiti.org/bpmn">
+                    <string><![CDATA[POST]]></string>
+                </field>
+                <field name="input" xmlns="http://activiti.org/bpmn">
+                    <expression>Message sent from: rt8</expression>
+                </field>
+                <field name="vout" xmlns="http://activiti.org/bpmn">
+                    <string><![CDATA[outvar1]]></string>
+                </field>
+            </extensionElements>
+        </serviceTask>
+        <sequenceFlow id="rt7_rt8" sourceRef="rt7" targetRef="rt8"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bpmn.extensions.rest.SyncInvokeTask" id="rt9" name="rt9">
+            <extensionElements>
+                <field name="serviceURL" xmlns="http://activiti.org/bpmn">
+                    <expression>http://10.0.3.1:9764/bps-bperf-services_1.0.0/services/service1/echo</expression>
+                </field>
+                <field name="method" xmlns="http://activiti.org/bpmn">
+                    <string><![CDATA[POST]]></string>
+                </field>
+                <field name="input" xmlns="http://activiti.org/bpmn">
+                    <expression>Message sent from: rt9</expression>
+                </field>
+                <field name="vout" xmlns="http://activiti.org/bpmn">
+                    <string><![CDATA[outvar1]]></string>
+                </field>
+            </extensionElements>
+        </serviceTask>
+        <sequenceFlow id="rt8_rt9" sourceRef="rt8" targetRef="rt9"/>
+        <serviceTask xmlns:ns0="http://activiti.org/bpmn" ns0:class="org.wso2.carbon.bpmn.extensions.rest.SyncInvokeTask" id="rt10" name="rt10">
+            <extensionElements>
+                <field name="serviceURL" xmlns="http://activiti.org/bpmn">
+                    <expression>http://10.0.3.1:9764/bps-bperf-services_1.0.0/services/service1/echo</expression>
+                </field>
+                <field name="method" xmlns="http://activiti.org/bpmn">
+                    <string><![CDATA[POST]]></string>
+                </field>
+                <field name="input" xmlns="http://activiti.org/bpmn">
+                    <expression>Message sent from: rt10</expression>
+                </field>
+                <field name="vout" xmlns="http://activiti.org/bpmn">
+                    <string><![CDATA[outvar1]]></string>
+                </field>
+            </extensionElements>
+        </serviceTask>
+        <sequenceFlow id="rt9_rt10" sourceRef="rt9" targetRef="rt10"/>
+        <endEvent id="endEvent" name="endEvent"/>
+        <sequenceFlow id="rt10_endEvent" sourceRef="rt10" targetRef="endEvent"/>
+    </process>
+</definitions>

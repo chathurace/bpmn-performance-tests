@@ -1,0 +1,81 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans   http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+        <!--<property name="driverClassName" value="org.h2.Driver" />-->
+        <property name="url" value="jdbc:mysql://localhost:3306/bpmnperfdb1" />
+        <!--<property name="url" value="jdbc:h2:mem:activiti;DB_CLOSE_DELAY=1000" />-->
+        <property name="username" value="fs" />
+        <property name="password" value="fs" />
+        <property name="defaultAutoCommit" value="false" />
+    </bean>
+
+    <bean id="dataSource2" class="com.jolbox.bonecp.BoneCPDataSource">
+        <property name="driverClass" value="com.mysql.jdbc.Driver" />
+        <!--<property name="driverClassName" value="org.h2.Driver" />-->
+        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/bpmnperfdb1" />
+        <!--<property name="url" value="jdbc:h2:mem:activiti;DB_CLOSE_DELAY=1000" />-->
+        <property name="username" value="fs" />
+        <property name="password" value="fs" />
+        <!--<property name="defaultAutoCommit" value="false" />-->
+
+        <property name="idleConnectionTestPeriodInMinutes" value="60"/>
+        <property name="idleMaxAgeInMinutes" value="240"/>
+        <property name="maxConnectionsPerPartition" value="30"/>
+        <property name="minConnectionsPerPartition" value="10"/>
+        <property name="partitionCount" value="3"/>
+        <property name="acquireIncrement" value="5"/>
+        <property name="defaultAutoCommit" value="false"/>
+        <property name="statementsCacheSize" value="100"/>
+        <property name="poolStrategy" value="DEFAULT"/>
+    </bean>
+
+    <bean id="dataSource3" class="com.jolbox.bonecp.BoneCPDataSource">
+        <!--<property name="driverClass" value="com.mysql.jdbc.Driver" />-->
+        <property name="driverClass" value="org.h2.Driver" />
+        <!--<property name="jdbcUrl" value="jdbc:mysql://localhost:3306/bpmnperfdb1" />-->
+        <property name="jdbcUrl" value="jdbc:h2:mem:activiti;DB_CLOSE_DELAY=1000;DB_CLOSE_ON_EXIT=FALSE" />
+        <property name="username" value="fs" />
+        <property name="password" value="fs" />
+        <!--<property name="defaultAutoCommit" value="false" />-->
+
+        <property name="idleConnectionTestPeriod" value="60"/>
+        <property name="idleMaxAge" value="240"/>
+        <property name="maxConnectionsPerPartition" value="30"/>
+        <property name="minConnectionsPerPartition" value="10"/>
+        <property name="partitionCount" value="3"/>
+        <property name="acquireIncrement" value="5"/>
+        <!--<property name="defaultAutoCommit" value="false"/>-->
+        <property name="statementsCacheSize" value="100"/>
+        <property name="releaseHelperThreads" value="3"/>
+        <property name="poolStrategy" value="3"/>
+    </bean>
+
+    <bean id="processEngineConfiguration" class="org.activiti.engine.impl.cfg.StandaloneProcessEngineConfiguration">
+
+        <property name="dataSource" ref="dataSource" />
+
+        <property name="databaseSchemaUpdate" value="true" />
+
+        <property name="jobExecutorActivate" value="false" />
+
+        <property name="mailServerHost" value="smtp.gmail.com" />
+        <property name="mailServerPort" value="5025" />
+
+        <property name="jdbcMaxActiveConnections" value="100" />
+        <property name="jdbcMaxIdleConnections" value="100" />
+        <property name="idBlockSize" value="50000" />
+        
+
+        <!--<property name="history" value="none" />-->
+
+        <!--<property name="customMybatisMappers">-->
+            <!--<set>-->
+                <!--<value>org.wso2.carbon.bpmn.core.mgt.model.DeploymentWrapper</value>-->
+            <!--</set>-->
+        <!--</property>-->
+    </bean>
+
+</beans>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<definitions targetNamespace="http://www.activiti.org/test" xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL">
+    <process id="seq_u100" isExecutable="true" name="seq_u100">
+        <startEvent id="startEvent" name="startEvent"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut1" name="ut1"/>
+        <sequenceFlow id="startEvent_ut1" sourceRef="startEvent" targetRef="ut1"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut2" name="ut2"/>
+        <sequenceFlow id="ut1_ut2" sourceRef="ut1" targetRef="ut2"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut3" name="ut3"/>
+        <sequenceFlow id="ut2_ut3" sourceRef="ut2" targetRef="ut3"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut4" name="ut4"/>
+        <sequenceFlow id="ut3_ut4" sourceRef="ut3" targetRef="ut4"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut5" name="ut5"/>
+        <sequenceFlow id="ut4_ut5" sourceRef="ut4" targetRef="ut5"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut6" name="ut6"/>
+        <sequenceFlow id="ut5_ut6" sourceRef="ut5" targetRef="ut6"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut7" name="ut7"/>
+        <sequenceFlow id="ut6_ut7" sourceRef="ut6" targetRef="ut7"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut8" name="ut8"/>
+        <sequenceFlow id="ut7_ut8" sourceRef="ut7" targetRef="ut8"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut9" name="ut9"/>
+        <sequenceFlow id="ut8_ut9" sourceRef="ut8" targetRef="ut9"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut10" name="ut10"/>
+        <sequenceFlow id="ut9_ut10" sourceRef="ut9" targetRef="ut10"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut11" name="ut11"/>
+        <sequenceFlow id="ut10_ut11" sourceRef="ut10" targetRef="ut11"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut12" name="ut12"/>
+        <sequenceFlow id="ut11_ut12" sourceRef="ut11" targetRef="ut12"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut13" name="ut13"/>
+        <sequenceFlow id="ut12_ut13" sourceRef="ut12" targetRef="ut13"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut14" name="ut14"/>
+        <sequenceFlow id="ut13_ut14" sourceRef="ut13" targetRef="ut14"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut15" name="ut15"/>
+        <sequenceFlow id="ut14_ut15" sourceRef="ut14" targetRef="ut15"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut16" name="ut16"/>
+        <sequenceFlow id="ut15_ut16" sourceRef="ut15" targetRef="ut16"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut17" name="ut17"/>
+        <sequenceFlow id="ut16_ut17" sourceRef="ut16" targetRef="ut17"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut18" name="ut18"/>
+        <sequenceFlow id="ut17_ut18" sourceRef="ut17" targetRef="ut18"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut19" name="ut19"/>
+        <sequenceFlow id="ut18_ut19" sourceRef="ut18" targetRef="ut19"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut20" name="ut20"/>
+        <sequenceFlow id="ut19_ut20" sourceRef="ut19" targetRef="ut20"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut21" name="ut21"/>
+        <sequenceFlow id="ut20_ut21" sourceRef="ut20" targetRef="ut21"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut22" name="ut22"/>
+        <sequenceFlow id="ut21_ut22" sourceRef="ut21" targetRef="ut22"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut23" name="ut23"/>
+        <sequenceFlow id="ut22_ut23" sourceRef="ut22" targetRef="ut23"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut24" name="ut24"/>
+        <sequenceFlow id="ut23_ut24" sourceRef="ut23" targetRef="ut24"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut25" name="ut25"/>
+        <sequenceFlow id="ut24_ut25" sourceRef="ut24" targetRef="ut25"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut26" name="ut26"/>
+        <sequenceFlow id="ut25_ut26" sourceRef="ut25" targetRef="ut26"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut27" name="ut27"/>
+        <sequenceFlow id="ut26_ut27" sourceRef="ut26" targetRef="ut27"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut28" name="ut28"/>
+        <sequenceFlow id="ut27_ut28" sourceRef="ut27" targetRef="ut28"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut29" name="ut29"/>
+        <sequenceFlow id="ut28_ut29" sourceRef="ut28" targetRef="ut29"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut30" name="ut30"/>
+        <sequenceFlow id="ut29_ut30" sourceRef="ut29" targetRef="ut30"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut31" name="ut31"/>
+        <sequenceFlow id="ut30_ut31" sourceRef="ut30" targetRef="ut31"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut32" name="ut32"/>
+        <sequenceFlow id="ut31_ut32" sourceRef="ut31" targetRef="ut32"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut33" name="ut33"/>
+        <sequenceFlow id="ut32_ut33" sourceRef="ut32" targetRef="ut33"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut34" name="ut34"/>
+        <sequenceFlow id="ut33_ut34" sourceRef="ut33" targetRef="ut34"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut35" name="ut35"/>
+        <sequenceFlow id="ut34_ut35" sourceRef="ut34" targetRef="ut35"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut36" name="ut36"/>
+        <sequenceFlow id="ut35_ut36" sourceRef="ut35" targetRef="ut36"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut37" name="ut37"/>
+        <sequenceFlow id="ut36_ut37" sourceRef="ut36" targetRef="ut37"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut38" name="ut38"/>
+        <sequenceFlow id="ut37_ut38" sourceRef="ut37" targetRef="ut38"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut39" name="ut39"/>
+        <sequenceFlow id="ut38_ut39" sourceRef="ut38" targetRef="ut39"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut40" name="ut40"/>
+        <sequenceFlow id="ut39_ut40" sourceRef="ut39" targetRef="ut40"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut41" name="ut41"/>
+        <sequenceFlow id="ut40_ut41" sourceRef="ut40" targetRef="ut41"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut42" name="ut42"/>
+        <sequenceFlow id="ut41_ut42" sourceRef="ut41" targetRef="ut42"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut43" name="ut43"/>
+        <sequenceFlow id="ut42_ut43" sourceRef="ut42" targetRef="ut43"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut44" name="ut44"/>
+        <sequenceFlow id="ut43_ut44" sourceRef="ut43" targetRef="ut44"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut45" name="ut45"/>
+        <sequenceFlow id="ut44_ut45" sourceRef="ut44" targetRef="ut45"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut46" name="ut46"/>
+        <sequenceFlow id="ut45_ut46" sourceRef="ut45" targetRef="ut46"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut47" name="ut47"/>
+        <sequenceFlow id="ut46_ut47" sourceRef="ut46" targetRef="ut47"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut48" name="ut48"/>
+        <sequenceFlow id="ut47_ut48" sourceRef="ut47" targetRef="ut48"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut49" name="ut49"/>
+        <sequenceFlow id="ut48_ut49" sourceRef="ut48" targetRef="ut49"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut50" name="ut50"/>
+        <sequenceFlow id="ut49_ut50" sourceRef="ut49" targetRef="ut50"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut51" name="ut51"/>
+        <sequenceFlow id="ut50_ut51" sourceRef="ut50" targetRef="ut51"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut52" name="ut52"/>
+        <sequenceFlow id="ut51_ut52" sourceRef="ut51" targetRef="ut52"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut53" name="ut53"/>
+        <sequenceFlow id="ut52_ut53" sourceRef="ut52" targetRef="ut53"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut54" name="ut54"/>
+        <sequenceFlow id="ut53_ut54" sourceRef="ut53" targetRef="ut54"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut55" name="ut55"/>
+        <sequenceFlow id="ut54_ut55" sourceRef="ut54" targetRef="ut55"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut56" name="ut56"/>
+        <sequenceFlow id="ut55_ut56" sourceRef="ut55" targetRef="ut56"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut57" name="ut57"/>
+        <sequenceFlow id="ut56_ut57" sourceRef="ut56" targetRef="ut57"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut58" name="ut58"/>
+        <sequenceFlow id="ut57_ut58" sourceRef="ut57" targetRef="ut58"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut59" name="ut59"/>
+        <sequenceFlow id="ut58_ut59" sourceRef="ut58" targetRef="ut59"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut60" name="ut60"/>
+        <sequenceFlow id="ut59_ut60" sourceRef="ut59" targetRef="ut60"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut61" name="ut61"/>
+        <sequenceFlow id="ut60_ut61" sourceRef="ut60" targetRef="ut61"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut62" name="ut62"/>
+        <sequenceFlow id="ut61_ut62" sourceRef="ut61" targetRef="ut62"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut63" name="ut63"/>
+        <sequenceFlow id="ut62_ut63" sourceRef="ut62" targetRef="ut63"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut64" name="ut64"/>
+        <sequenceFlow id="ut63_ut64" sourceRef="ut63" targetRef="ut64"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut65" name="ut65"/>
+        <sequenceFlow id="ut64_ut65" sourceRef="ut64" targetRef="ut65"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut66" name="ut66"/>
+        <sequenceFlow id="ut65_ut66" sourceRef="ut65" targetRef="ut66"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut67" name="ut67"/>
+        <sequenceFlow id="ut66_ut67" sourceRef="ut66" targetRef="ut67"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut68" name="ut68"/>
+        <sequenceFlow id="ut67_ut68" sourceRef="ut67" targetRef="ut68"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut69" name="ut69"/>
+        <sequenceFlow id="ut68_ut69" sourceRef="ut68" targetRef="ut69"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut70" name="ut70"/>
+        <sequenceFlow id="ut69_ut70" sourceRef="ut69" targetRef="ut70"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut71" name="ut71"/>
+        <sequenceFlow id="ut70_ut71" sourceRef="ut70" targetRef="ut71"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut72" name="ut72"/>
+        <sequenceFlow id="ut71_ut72" sourceRef="ut71" targetRef="ut72"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut73" name="ut73"/>
+        <sequenceFlow id="ut72_ut73" sourceRef="ut72" targetRef="ut73"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut74" name="ut74"/>
+        <sequenceFlow id="ut73_ut74" sourceRef="ut73" targetRef="ut74"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut75" name="ut75"/>
+        <sequenceFlow id="ut74_ut75" sourceRef="ut74" targetRef="ut75"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut76" name="ut76"/>
+        <sequenceFlow id="ut75_ut76" sourceRef="ut75" targetRef="ut76"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut77" name="ut77"/>
+        <sequenceFlow id="ut76_ut77" sourceRef="ut76" targetRef="ut77"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut78" name="ut78"/>
+        <sequenceFlow id="ut77_ut78" sourceRef="ut77" targetRef="ut78"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut79" name="ut79"/>
+        <sequenceFlow id="ut78_ut79" sourceRef="ut78" targetRef="ut79"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut80" name="ut80"/>
+        <sequenceFlow id="ut79_ut80" sourceRef="ut79" targetRef="ut80"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut81" name="ut81"/>
+        <sequenceFlow id="ut80_ut81" sourceRef="ut80" targetRef="ut81"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut82" name="ut82"/>
+        <sequenceFlow id="ut81_ut82" sourceRef="ut81" targetRef="ut82"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut83" name="ut83"/>
+        <sequenceFlow id="ut82_ut83" sourceRef="ut82" targetRef="ut83"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut84" name="ut84"/>
+        <sequenceFlow id="ut83_ut84" sourceRef="ut83" targetRef="ut84"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut85" name="ut85"/>
+        <sequenceFlow id="ut84_ut85" sourceRef="ut84" targetRef="ut85"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut86" name="ut86"/>
+        <sequenceFlow id="ut85_ut86" sourceRef="ut85" targetRef="ut86"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut87" name="ut87"/>
+        <sequenceFlow id="ut86_ut87" sourceRef="ut86" targetRef="ut87"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut88" name="ut88"/>
+        <sequenceFlow id="ut87_ut88" sourceRef="ut87" targetRef="ut88"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut89" name="ut89"/>
+        <sequenceFlow id="ut88_ut89" sourceRef="ut88" targetRef="ut89"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut90" name="ut90"/>
+        <sequenceFlow id="ut89_ut90" sourceRef="ut89" targetRef="ut90"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut91" name="ut91"/>
+        <sequenceFlow id="ut90_ut91" sourceRef="ut90" targetRef="ut91"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut92" name="ut92"/>
+        <sequenceFlow id="ut91_ut92" sourceRef="ut91" targetRef="ut92"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut93" name="ut93"/>
+        <sequenceFlow id="ut92_ut93" sourceRef="ut92" targetRef="ut93"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut94" name="ut94"/>
+        <sequenceFlow id="ut93_ut94" sourceRef="ut93" targetRef="ut94"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut95" name="ut95"/>
+        <sequenceFlow id="ut94_ut95" sourceRef="ut94" targetRef="ut95"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut96" name="ut96"/>
+        <sequenceFlow id="ut95_ut96" sourceRef="ut95" targetRef="ut96"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut97" name="ut97"/>
+        <sequenceFlow id="ut96_ut97" sourceRef="ut96" targetRef="ut97"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut98" name="ut98"/>
+        <sequenceFlow id="ut97_ut98" sourceRef="ut97" targetRef="ut98"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut99" name="ut99"/>
+        <sequenceFlow id="ut98_ut99" sourceRef="ut98" targetRef="ut99"/>
+        <userTask xmlns:ns0="http://activiti.org/bpmn" ns0:candidateUsers="kermit,admin" id="ut100" name="ut100"/>
+        <sequenceFlow id="ut99_ut100" sourceRef="ut99" targetRef="ut100"/>
+        <endEvent id="endEvent" name="endEvent"/>
+        <sequenceFlow id="ut100_endEvent" sourceRef="ut100" targetRef="endEvent"/>
+    </process>
+</definitions>
